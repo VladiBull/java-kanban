@@ -1,8 +1,8 @@
-import java.util.Objects;
+package ru.yandex.tasktracker.model;
 
 public class Task {
-    private final String name;
-    private final String description;
+    private String name;
+    private String description;
     private int id;
     private Status status;
 
@@ -36,5 +36,21 @@ public class Task {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
