@@ -12,7 +12,7 @@ public class TaskManager {
     private HashMap<Integer, Task> tasks = new HashMap<>();
     private HashMap<Integer, Epic> epics = new HashMap<>();
     private HashMap<Integer, Subtask> subtasks = new HashMap<>();
-    private static int idCounter = 0;
+    private int idCounter = 0;
 
     public Task addTask(Task newTask) {
         newTask.setId(generateID());
